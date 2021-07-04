@@ -19,4 +19,4 @@ jobs:
         sudo apt install -y gcc
     - name: Build C files
       run: |
-        for file in *.c; do echo gcc -o ${file/.c/} $file;done
+        for file in *.c; do gcc -o ${file/.c/} $file;done
