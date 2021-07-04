@@ -1,0 +1,22 @@
+name: CI C
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt install -y gcc
+    - name: Build C files
+      run: |
+        for file in *.c; do gcc -o ${file/.c/} $file;done
