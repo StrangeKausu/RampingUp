@@ -19,4 +19,4 @@ jobs:
         sudo apt install -y g++
     - name: Build C++ files
       run: |
-        for file in *.cpp; do echo g++ -o ${file/.cpp/} $file;done
+        for file in *.cpp; do g++ -o ${file/.cpp/} $file;done
