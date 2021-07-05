@@ -29,7 +29,7 @@ for i in range(0,100):
         
     elif a==4:
         radius=int(input("Enter the radius of the Circle : "))
-        print(22/7*radius*radius)
+        print((22*radius*radius)/7)
         p=int(input("If you want to continue Press 5 otherwise Press 0 to exit: "))
         if p!=5:
             break
