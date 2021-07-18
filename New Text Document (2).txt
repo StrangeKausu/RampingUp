@@ -1,0 +1,34 @@
+list1=[]
+list2=[]
+a=int(input("Enter Number Of Students : "))
+def name_marks():
+    for i in range(0,a):
+        Name=str(input("Name : "))
+        Marks=int(input("Marks : "))
+        list1.append(Name)
+        list2.append(Marks)
+    print("\n")
+    students_marks()
+    average()
+    
+def students_marks():
+    print("Marks of all students are")
+    for i in range(0,a):
+        print(list1[i],":",list2[i])
+    print("\n")
+
+def average():
+    count=0
+    for i in list2:
+        count+=i
+    print("The average of all marks is",count/len(list2))
+
+if __name__=="__main__":
+    name_marks()
+    
+    
+
+
+
+
+    
