@@ -64,6 +64,9 @@ int main ()
             printf("%.3f\n",(2*22*r*r*r)/(7*3));
             break;
             
+            default:
+	        printf ("WRONG CHOICE\n");
+            
         }
         printf ("Want to continue (y/n)? : ");
         scanf ("%s", &ch);
