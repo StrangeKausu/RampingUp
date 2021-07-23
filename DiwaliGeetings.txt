@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cstdlib>
+int main() {
+    char *value;
+    value=getenv("USER");
+    std::cout<<value;
+
+    std::string name;
+    std::cout<<"WELCOME TO DIWALI GREETING CARD MAKER \n";
+    std::cout<<"Please Enter your name : ";
+    std::cin>>name;
+    
+    std::cout<<".................Diwali Greeting Card......................\n";
+    std::cout<<"May this festival of lights bring brightness into your lives and bring happiness,joy and prosperity for you and your family.\n";
+    std::cout<<"Have a Happy and Prosperous Diwali!!\n\n";
+    std::cout<<"                                        From";
+    std::cout<<"                                        "<<name;
+
+    return 0;
+}
