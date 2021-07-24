@@ -15,7 +15,7 @@
    
 - **LeaveApplication**
 
-    Create a Application for leave
+    Create an application for leave
     
 - **LeapYear**
 
@@ -28,10 +28,6 @@
 - **ClassMarks**
 
   Calculate marks with Name
-  
-- **CalculatePowerofANumber**
-
-  Calculate Number with power
   
 - **SimpleCalculator**
 
